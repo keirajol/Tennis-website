@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>login</title>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="login.js"></script>
     <link rel="stylesheet" href="login.css">
     
   </head>
@@ -12,17 +12,42 @@
     <nav class="navbar">
 
       <div class="dropdown">
-        <button class="dropdownmenu">Menu</button>
+        <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
           <a href="../homepage/homepage.html">Home</a>
-          <a href="../bardienst/bardienst.html">bardienst</a>
-          <a href="../contactpagina/contact.html">contact</a>
+          <a href="../contactpagina/contact.html">Contact</a>
           <a href="../inschrijf pagina/inschrijf.html">Inschrijven</a>
-          <a href="../uitslag pagina/uitslag.html">Uitslagen</a>
         </div>
       </div>
-      
 
-    </nav>
+      <h1 class="naam">Naam website</h1>
+
+      <div class="search">
+        <input type="search" id="zoekbalk" name="search" placeholder="zoek">
+        <input type="image" name="submit" id="zoek" src="search.png" alt="zoek">
+       </div>
+
+       <div class= "login">
+         <a href="../loginpage/login.html"><input type="image" src="inlogr.png" id="inlog" name="inloggen" alt="login"></a>
+       </div>
+      </nav>
+      
+      <div class="logform">
+        <form class="inlogform">
+
+          <h2 class="tekstlogin">Login</h2>
+          <div class="allemaal">
+            <div class="beide">
+            <input type="text" name="username" id="user" placeholder="Gebruikersnaam"><br>
+            <input type="password" name="pwd" id="password" placeholder="Wachtwoord"><br>
+            </div>
+            <input type="submit" id="login" value="Login" onclick="getinfo"><br>
+            <a href="#">wachtwoord vergeten</a><br>
+            <a href="#">Registreren</a>
+            </div>
+        </form>
+    </div>
+
+    
   </body>
 </html>
