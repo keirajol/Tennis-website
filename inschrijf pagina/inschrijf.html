@@ -9,18 +9,19 @@
   </head>
   <body>
   
+    <!-- Navabar -->
     <nav class="navbar">
 
       <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
           <a href="../homepage/homepage.html">Home</a>
-          <a href="../contactpagina/contact.html">Contact</a>
           <a href="../inschrijf pagina/inschrijf.html">Inschrijven</a>
+          <a href="../contactpagina/contact.html">Contact</a>
         </div>
       </div>
 
-      <h1 class="naam">Naam website</h1>
+      <h1 class="naam">Boris2 tennisclub</h1>
 
       <div class="search">
         <input type="search" id="zoekbalk" name="search" placeholder="zoek">
@@ -32,17 +33,20 @@
        </div>
       </nav>
 
-      <div class="inschrijven">
+      <!-- Body -->
+      <div id="inschrijven">
 
         <p class="nu-inschrijven">Schrijf je nu in!!</p>
 
         <h2 class="algemeen">Algemeen</h2>
 
-        <form class="formulier">
+        <hr><br><br>
+
+        <form  action="inschrijf.php" method="POST" class="formulier">
         <p>Geslacht*</p> 
-        <input type="radio" name="Geslacht" value="vrouw" id="vrouw" required>
+        <input type="radio" name="geslacht" value="vrouw" id="vrouw" class="geslacht" required>
         <label for="vrouw">Vrouw</label>
-        <input type="radio" name="Geslacht" value="man" id="man">
+        <input type="radio" name="geslacht" value="man" id="man" class="geslacht">
         <label for="man">Man</label>
         <br><br><br>
 
@@ -75,7 +79,7 @@
 
         <label for="datum">Geboorte datum*</label>
       <br>
-        <input type="date" id="datum" name="trip-start" value="2021-06-21" min="1960-01-01" max="2021-05-21" required> 
+        <input type="date" id="datum" name="trip-start" value="2021-06-21" min="1600-01-01" max="2021-05-21" required> 
       <br><br>
       <label for="landen">Nationaliteit</label>
       <br>
@@ -494,7 +498,6 @@
             <option value="NO">Noorwegen</option>
             <option value="NF">Norfolkeiland</option>
             <option value="UG">Oeganda</option>
-            <option value="UA">Oeganda</option>
             <option value="UZ">Oezbekistan</option>
             <option value="OM">Oman</option>
             <option value="AT">Oostenrijk</option>
@@ -590,7 +593,7 @@
             </div>
 
             <br><br>
-            <input type="submit" id="submit" value="Inschrijven" onclick="inschrijven()" placeholder="Inschrijven">
+            <input type="submit" id="submit" value="Inschrijven" placeholder="Inschrijven" name="submit">
 
         </form>
       </div>

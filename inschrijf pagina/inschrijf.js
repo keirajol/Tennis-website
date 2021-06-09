@@ -19,5 +19,11 @@ function inschrijven() {
     var land = document.getElementById("wonen").value;      
     var email = document.getElementById("email").value;
     var phonenumber = document.getElementById("phonenumber").value;          
-    var submit = document.getElementById("submit").value;                     
+    var submit = document.getElementById("submit").value; 
+
+    var inschrijven = document.getElementsById("inschrijven");
+
+    sessionStorage.setItem("naam", naam);
+    window.open("gegevens.html");
+
 }
